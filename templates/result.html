@@ -1,0 +1,64 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content%}
+<div class="page-wrapper">
+            <div class="content container-fluid">
+               <div class="page-header">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h3 class="page-title">Welcome Student</h3>
+                        <h6 class="page-title" align="center">Student Result</h6>
+                     </div>
+                  </div>
+               </div>
+                   <style>
+            table {
+              font-family: arial, sans-serif;
+              border-collapse: collapse;
+              width: 100%;
+            }
+
+            td, th {
+              border: 1px solid #dddddd;
+              text-align: left;
+              padding: 8px;
+            }
+
+            tr:nth-child(even) {
+              background-color: #dddddd;
+            }
+            </style>
+            <table>
+                <tr>
+                    <th>S/N</th>
+                    <th>Names</th>
+                    <th>TCR</th>
+                    <th>GPA</th>
+                    <th>CGPA</th>
+
+
+                </tr>
+               <tr>
+                   <td>1</td>
+                    <td>Abba Muhammad</td>
+                    <td>44</td>
+                    <td>4.50</td>
+                   <td>4.70</td>
+                </tr>
+                 <tr>
+                   <td>2</td>
+                    <td>Bashir Usman</td>
+                    <td>40</td>
+                    <td>3.50</td>
+                   <td>3.70</td>
+                </tr>
+                 <tr>
+                   <td>3</td>
+                    <td>Fatima Muhammad</td>
+                    <td>42</td>
+                    <td>4.00</td>
+                   <td>4.22</td>
+                </tr>
+
+        </table>
+  {% endblock %}
