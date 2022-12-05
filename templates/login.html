@@ -25,6 +25,9 @@
                      <div class="login-right-wrap">
                         <h1>Login</h1>
                         <p class="account-subtitle">Access to our dashboard</p>
+{% for message in messages %}
+                       <h6 style="color: red; text-align: center; font-family: 'Courier New', Courier, monospace;"><b>{{message}}</b></h6>
+                       {% endfor %}
                         <form method="POST">
                            {% csrf_token %}
                            <div class="form-group">
